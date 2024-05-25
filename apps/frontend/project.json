@@ -1,0 +1,40 @@
+{
+	"name": "@kutano/frontend",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/frontend",
+        "command": "vite dev"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/frontend",
+        "command": "vite build"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/frontend",
+        "command": "eslint \"src/**/*.{js,ts,svelte}\""
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/frontend",
+        "command": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+      }
+    },
+    "check.watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/frontend",
+        "command": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+      }
+    }
+  }
+}

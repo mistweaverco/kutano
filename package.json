@@ -1,0 +1,57 @@
+{
+	"name": "kutano",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Kutano aims to be a dead-simple OSS 🐧 that can a be a replacement for calendly 📅. It should be easily pluggable in existing Wordpress 📚 installations, or be used as stand-alone-application ⚡.",
+	"scripts": {
+		"build.frontend": "nx run @kutano/frontend:build",
+		"build.backend": "nx run @kutano/backend:build",
+		"dev.frontend": "nx run @kutano/frontend:dev",
+		"dev.backend": "nx run @kutano/backend:dev",
+		"lint.frontend": "nx run @kutano/frontend:lint",
+		"lint.backend": "nx run @kutano/backend:lint",
+		"format.frontend": "nx run @kutano/frontend:format",
+		"format.backend": "nx run @kutano/backend:format",
+		"check.frontend": "nx run @kutano/frontend:check",
+		"check.backend": "nx run @kutano/backend:check"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/mistweaverco/kutano.git"
+	},
+	"author": {
+		"name": "Marco Kellershoff",
+		"email": "marco@kellershoff.net"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mistweaverco/kutano/issues"
+	},
+	"homepage": "https://github.com/mistweaverco/kutano#readme",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"devDependencies": {
+		"@eslint/js": "^9.3.0",
+		"@nx/eslint": "19.1.0",
+		"@nx/js": "19.1.0",
+		"@nx/web": "19.1.0",
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"bulma": "^1.0.1",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"eslint-plugin-svelte": "^2.39.0",
+		"prettier": "3.2.5",
+		"prettier-plugin-svelte": "^3.2.3",
+		"svelte": "^4.2.17",
+		"svelte-check": "^3.6.0",
+		"tslib": "^2.4.1",
+		"typescript": "^5.4.5",
+		"typescript-eslint": "^7.10.0",
+		"vite": "^5.0.3"
+	}
+}
